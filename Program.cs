@@ -4,8 +4,11 @@ var app = builder.Build();
 
 app.MapGet("/get-people", () => PersonRepository.GetPeople());
 app.MapGet("/get-cars", () => CarRepository.GetCars());
+app.MapGet("/get-cars-with-people", () => CarsWithPeopleRepository.GetCarsWithPeople());
 
 app.Run();
+
+
 
 // Person p1 = new Person();
 
