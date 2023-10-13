@@ -1,11 +1,11 @@
 public class Car
 {
-    public string Rego { get; set; }
-    public string Colour { get; set; }
-    public string Make { get; set; }
-    public string Model { get; set; }
-    public List<Person> Passengers { get; set; }
-    public Person Driver { get; set; }
+    public string? Rego { get; set; }
+    public string? Colour { get; set; }
+    public string? Make { get; set; }
+    public string? Model { get; set; }
+    public List<Person>? Passengers { get; set; }
+    public Person? Driver { get; set; }
 
     public Car()
     {

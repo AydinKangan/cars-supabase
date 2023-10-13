@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/aydinmate/Documents/Kangan/car-supabase/car-supabase.csproj": {}
+    "D:\\School\\cars-supabase\\car-supabase.csproj": {}
   },
   "projects": {
-    "/home/aydinmate/Documents/Kangan/car-supabase/car-supabase.csproj": {
+    "D:\\School\\cars-supabase\\car-supabase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/aydinmate/Documents/Kangan/car-supabase/car-supabase.csproj",
+        "projectUniqueName": "D:\\School\\cars-supabase\\car-supabase.csproj",
         "projectName": "car-supabase",
-        "projectPath": "/home/aydinmate/Documents/Kangan/car-supabase/car-supabase.csproj",
-        "packagesPath": "/home/aydinmate/.nuget/packages/",
-        "outputPath": "/home/aydinmate/Documents/Kangan/car-supabase/obj/",
+        "projectPath": "D:\\School\\cars-supabase\\car-supabase.csproj",
+        "packagesPath": "C:\\Users\\aydin\\.nuget\\packages\\",
+        "outputPath": "D:\\School\\cars-supabase\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/aydinmate/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\aydin\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -74,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.112/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
