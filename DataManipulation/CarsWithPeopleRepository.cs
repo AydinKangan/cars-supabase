@@ -20,5 +20,23 @@ public class CarsWithPeopleRepository
         return cars;
     }
 
+    public static List<Car> FindFullCars()
+    {
+        List<Car> CarsWithPeople = GetCarsWithPeople();
+        List<Car> CarsNeedingReassignment = new List<Car>();
 
+        foreach (Car car in CarsWithPeople)
+        {
+            if (car.Passengers != null && car.Passengers.Count > 5)
+            {
+                CarsNeedingReassignment.Add(car);
+            }
+        }
+
+
+
+        return CarsNeedingReassignment; 
+    }
+
+    
 }
