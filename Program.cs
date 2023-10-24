@@ -1,15 +1,35 @@
-// var builder = WebApplication.CreateBuilder(args);
-// var app = builder.Build();
+var builder = WebApplication.CreateBuilder(args);
+var app = builder.Build();
+
+app.Use((ctx, next) =>
+{
+    ctx.Response.Headers["Access-Control-Allow-Origin"] = "*";
+
+    return next();
+});
+
+app.MapGet("/get-people", () => PersonRepository.GetPeople());
+app.MapGet("/get-cars", () => CarRepository.GetCars());
+app.MapGet("/get-cars-with-people", () => CarsWithPeopleRepository.GetCarsWithPeople());
+app.MapGet("/find-full-cars", () => CarsWithPeopleRepository.FindFullCars());
+app.Run();
 
 
-// app.MapGet("/get-people", () => PersonRepository.GetPeople());
-// app.MapGet("/get-cars", () => CarRepository.GetCars());
-// app.MapGet("/get-cars-with-people", () => CarsWithPeopleRepository.GetCarsWithPeople());
-// app.MapGet("/find-full-cars", () => CarsWithPeopleRepository.FindFullCars());
-// app.MapGet("/move-people-into-other-cars", () => UpdatePeople.MovePeopleIntoOtherCars());
-// app.Run();
 
-UpdatePeople.MovePeopleIntoOtherCars();
+
+
+
+
+
+
+
+
+
+
+
+
+
+// UpdatePeople.MovePeopleIntoOtherCars();
 
 // Person p1 = new Person();
 
